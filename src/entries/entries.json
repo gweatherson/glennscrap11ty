@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/entry",
+  "tags": "entries",
+  "permalink": "{{ date | UTCDate }}/{{ name | slug }}/index.html"
+}

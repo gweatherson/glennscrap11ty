@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google" content="notranslate">
+  <title>{{ site.title }}</title>
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+  <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+  <link rel="author" href="{{ site.url }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <!-- capture the CSS content as a Liquid variable -->
+  {% capture css %}{% include stylesheets/app.css %}{% endcapture %}
+  <!-- feed it through our cssmin filter to minify -->
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
+</head>
+
+<body>
+  <div class="site">
+    {% include partials/header.html %}
+    {{ content }}
+    {% include partials/footer.html %}
+  </div>
+</body>
+
+</html>

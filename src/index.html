@@ -1,0 +1,18 @@
+---
+layout: layouts/page
+pagination:
+   data: collections.sortedEntries
+   size: 9999
+   alias: sorted
+---
+<section class="post__list">
+{% for entry in sorted %}
+   <article class="post__list-item">
+      <header>
+        <a class="post__link" href="{{ entry.url}}">
+         {{ entry.data.name }} <span class="post__meta"> / {{ entry.date | UTCDate | date: "%B %d, %Y" }}</span>
+        </a>
+      </header>
+   </article>
+{% endfor %}
+</section>
