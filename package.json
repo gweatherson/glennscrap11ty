@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"eleventy --watch --quiet\" \"gulp dev --color\" \"lepto\"",
-    "build": "gulp build && eleventy --pathprefix=/ && eleventy --pathprefix=/ && lepto"
+    "build": "gulp build && eleventy --pathprefix=glennscrap11ty && eleventy --pathprefix=glennscrap11ty && lepto"
   },
   "author": "Glenn Weatherson",
   "license": "ISC",
