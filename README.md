@@ -1,5 +1,3 @@
-#glennscrap.com
-
 This project is heavily forked from https://github.com/chrisssycollins/simple-journal
 Thank you for the wonderful foundation Chris!
 
