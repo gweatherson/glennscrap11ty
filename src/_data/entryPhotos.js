@@ -1,3 +1,4 @@
+// This portion is taken from: https://github.com/chrisssycollins/simple-journal/
 var fs = require("fs"),
   path = require("path");
 
