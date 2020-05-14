@@ -75,10 +75,7 @@ body {
   color: #CCBF82;
   background-color: #080808;
   height: 100vh;
-  padding: 4rem; }
-  @media screen and (max-width: 1024px) {
-    body {
-      padding: 2rem; } }
+  padding: 0; }
 
 h1 {
   font-size: 3rem; }
@@ -97,9 +94,18 @@ figure > img {
 
 figcaption {
   font-size: 1.4rem;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  padding: 0 4rem 0 4rem; }
+  @media screen and (max-width: 1024px) {
+    figcaption {
+      padding: 0 2rem 0 2rem; } }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400; }
 
 a {
@@ -120,6 +126,12 @@ a {
   justify-items: stretch;
   align-items: stretch; }
 
+.header {
+  padding: 4rem; }
+  @media screen and (max-width: 1024px) {
+    .header {
+      padding: 2rem 2rem 0 2rem; } }
+
 .post figure:last-of-type {
   margin-bottom: 2rem; }
 
@@ -131,12 +143,13 @@ a {
       font-size: 1.4rem; } }
 
 .post__link {
-  padding: 1rem 0;
+  padding: 4rem 4rem 0 4rem;
   font-size: 2rem;
   margin-bottom: 2rem;
   display: block; }
   @media screen and (max-width: 1024px) {
     .post__link {
+      padding: 1rem 2rem 0 2rem;
       font-size: 1.4rem;
       margin-bottom: 1rem;
       display: block; } }
@@ -147,13 +160,17 @@ a {
 .footer {
   font-size: 1.2rem;
   background-color: #080808;
-  color: #67917A;
-  text-align: right; }
+  color: #67917a;
+  text-align: right;
+  padding-right: 0; }
+  @media screen and (max-width: 1024px) {
+    .footer {
+      padding-right: 2rem; } }
   .footer a {
-    color: #67917A;
+    color: #67917a;
     text-decoration: none; }
     .footer a:visited {
-      color: #67917A; }
+      color: #67917a; }
     .footer a:hover {
-      color: #67917A;
+      color: #67917a;
       text-decoration: underline; }

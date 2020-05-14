@@ -8,11 +8,7 @@ body {
   color: $text-color;
   background-color: $background-color;
   height: 100vh;
-  padding: 4rem;
-
-  @include media-query($mobile) {
-    padding: 2rem;
-  }
+  padding: 0;
 }
 
 h1 {
@@ -27,7 +23,7 @@ figure {
   margin-bottom: 20rem;
 
   @include media-query($mobile) {
-     margin-bottom: 10rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -38,13 +34,19 @@ figure > img {
 figcaption {
   font-size: $small-font-size;
   margin-top: 1rem;
+  padding: 0 4rem 0 4rem;
 
   @include media-query($mobile) {
-
+    padding: 0 2rem 0 2rem;
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $base-font-weight;
 }
 

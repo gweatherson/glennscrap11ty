@@ -7,3 +7,11 @@
   justify-items: stretch;
   align-items: stretch;
 }
+
+.header {
+  padding: 4rem;
+
+  @include media-query($mobile) {
+    padding: 2rem 2rem 0 2rem;
+  }
+}

@@ -1,34 +1,32 @@
 .post {
-
   figure:last-of-type {
     margin-bottom: 2rem;
   }
 
-	&__list-item {
+  &__list-item {
     font-size: 1.6rem;
 
     @include media-query($mobile) {
       padding: 1.5rem 0;
       font-size: 1.4rem;
     }
-	}
+  }
 
   &__link {
-    padding: 1rem 0;
+    padding: 4rem 4rem 0 4rem;
     font-size: 2rem;
     margin-bottom: 2rem;
     display: block;
 
     @include media-query($mobile) {
+      padding: 1rem 2rem 0 2rem;
       font-size: 1.4rem;
       margin-bottom: 1rem;
       display: block;
     }
-
   }
 
-	&__meta {
-		font-size: 1.2rem;
-	}
-
+  &__meta {
+    font-size: 1.2rem;
+  }
 }
