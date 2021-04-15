@@ -84,7 +84,8 @@ main {
   display: block; }
 
 figure {
-  margin-bottom: 20rem; }
+  margin-bottom: 20rem;
+  max-width: 160rem; }
   @media screen and (max-width: 1024px) {
     figure {
       margin-bottom: 10rem; } }
