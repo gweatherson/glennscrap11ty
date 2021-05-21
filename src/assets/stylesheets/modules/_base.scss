@@ -21,7 +21,7 @@ main {
 
 figure {
   margin-bottom: 20rem;
-  max-width: 160rem;
+  max-width: 140rem;
 
   @include media-query($mobile) {
     margin-bottom: 10rem;
